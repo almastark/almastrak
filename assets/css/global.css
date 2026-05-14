@@ -1,6 +1,6 @@
 :root{
   /* ===== Colors ===== */
-  --bg:#0b0b0d;
+ --bg:#0b0b0d;
   --bg-2:#121216;
   --panel:#16171d;
   --panel-2:#1b1c23;
@@ -19,6 +19,7 @@
   /* ===== Layout ===== */
   --max:1280px;
   --page-pad:16px;
+  --header-height:72px;
 
   /* ===== Spacing ===== */
   --space-2xs:8px;
