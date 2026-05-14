@@ -1,1 +1,194 @@
-/* Home page styles */
+/* ===== Home Page ===== */
+
+/* ===== Hero ===== */
+
+.home-hero{
+  padding-top:clamp(72px,9vw,132px);
+  padding-bottom:clamp(48px,7vw,88px);
+}
+
+.home-hero__eyebrow{
+  margin-bottom:22px;
+}
+
+.home-hero__grid{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:34px;
+  align-items:stretch;
+}
+
+.home-hero__copy{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:flex-start;
+  min-height:100%;
+}
+
+.home-hero__title{
+  width:100%;
+  margin-bottom:18px;
+}
+
+.home-hero__lead{
+  width:100%;
+  max-width:560px;
+}
+
+.home-hero__actions{
+  display:flex;
+  gap:16px;
+  margin-top:auto;
+  padding-top:28px;
+}
+
+.home-hero__actions .btn{
+  width:160px;
+  min-width:160px;
+  height:56px;
+  padding-inline:18px;
+}
+
+/* ===== Hero Image Panel ===== */
+
+.home-portrait{
+  min-height:520px;
+}
+
+.home-portrait__image{
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(180deg, rgba(11,11,13,.08), rgba(11,11,13,.52)),
+    url("../../images/hero/portrait-placeholder.jpg") center/cover no-repeat;
+  filter:grayscale(100%);
+  transform:scale(1.03);
+}
+
+.home-portrait::before{
+  content:"Replace with your own portrait or editorial image";
+  position:absolute;
+  right:16px;
+  bottom:14px;
+  z-index:2;
+  padding:8px 10px;
+  border:1px solid rgba(255,255,255,.12);
+  background:rgba(0,0,0,.24);
+  color:rgba(244,241,234,.72);
+  font-size:.72rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+/* ===== Cases ===== */
+
+.home-cases{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+}
+
+/* ===== Value Section ===== */
+
+.home-value{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:18px;
+  align-items:stretch;
+}
+
+.home-value__card,
+.home-chart{
+  min-height:100%;
+}
+
+/* ===== Profile ===== */
+
+.home-profile{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:18px;
+  align-items:stretch;
+}
+
+.home-profile__card{
+  min-height:100%;
+}
+
+.home-profile__card p{
+  color:var(--muted);
+}
+
+.home-profile__intro{
+  margin-bottom:16px;
+}
+
+/* ===== Contact ===== */
+
+.home-contact{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:18px;
+  align-items:start;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 1100px){
+  .home-hero__grid,
+  .home-value,
+  .home-profile,
+  .home-contact{
+    grid-template-columns:1fr;
+  }
+
+  .home-hero__actions{
+    margin-top:28px;
+    padding-top:0;
+  }
+
+  .home-cases{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .home-portrait{
+    min-height:460px;
+  }
+}
+
+@media (max-width: 760px){
+  .home-hero{
+    padding-top:64px;
+    padding-bottom:44px;
+  }
+
+  .home-hero__grid{
+    grid-template-columns:1fr;
+    gap:24px;
+  }
+
+  .home-hero__actions{
+    width:100%;
+    flex-wrap:wrap;
+  }
+
+  .home-hero__actions .btn{
+    width:100%;
+    min-width:0;
+  }
+
+  .home-cases{
+    grid-template-columns:1fr;
+  }
+
+  .home-portrait{
+    min-height:380px;
+  }
+
+  .home-portrait::before{
+    left:14px;
+    right:14px;
+    bottom:14px;
+  }
+}
