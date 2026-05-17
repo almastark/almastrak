@@ -62,7 +62,7 @@
   background:
     linear-gradient(180deg, rgba(11,11,13,.08), rgba(11,11,13,.52)),
     url("../../images/hero/portrait-placeholder.jpg") center/cover no-repeat;
-  filter:grayscale(100%);
+  
   transform:scale(1.03);
 }
 
