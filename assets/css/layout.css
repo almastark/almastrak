@@ -239,4 +239,7 @@
     margin-bottom:28px;
     padding-bottom:18px;
   }
+  .section-head__media{
+  aspect-ratio:16 / 9;
+}
 }
