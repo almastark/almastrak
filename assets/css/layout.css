@@ -29,11 +29,11 @@
 
 .section-head{
   display:grid;
-  grid-template-columns:.9fr 1.1fr;
-  gap:clamp(20px,4vw,56px);
-  align-items:end;
-  margin-bottom:clamp(28px,5vw,52px);
-  padding-bottom:20px;
+  grid-template-columns:minmax(0,1.25fr) minmax(320px,.75fr);
+  gap:clamp(28px,5vw,72px);
+  align-items:start;
+  margin-bottom:clamp(32px,5vw,56px);
+  padding-bottom:22px;
   border-bottom:1px solid rgba(255,255,255,.08);
 }
 
@@ -42,10 +42,12 @@
 }
 
 .section-head__text{
-  max-width:720px;
+  max-width:560px;
   color:var(--muted);
   font-size:1rem;
   line-height:1.75;
+  justify-self:end;
+  padding-top:10px;
 }
 
 .section-top{
