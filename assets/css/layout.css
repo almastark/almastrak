@@ -184,6 +184,12 @@
     grid-template-columns:1fr;
   }
 
+  .section-head__text{
+    max-width:720px;
+    justify-self:start;
+    padding-top:0;
+  }
+
   .grid--3,
   .grid--4{
     --grid-gap:18px;
