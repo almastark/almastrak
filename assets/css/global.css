@@ -144,8 +144,8 @@ h1,
 h2,
 .h2{
   font-size:var(--h2);
-  line-height:.98;
-  letter-spacing:-.05em;
+  line-height:1;
+  letter-spacing:-.035em;
 }
 
 h3,
