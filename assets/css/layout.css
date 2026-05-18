@@ -242,4 +242,12 @@
   .section-head__media{
   aspect-ratio:16 / 9;
 }
+ .section-head__media--natural-mobile{
+  aspect-ratio:auto;
+}
+
+.section-head__media--natural-mobile img{
+  height:auto;
+  object-fit:contain;
+} 
 }
